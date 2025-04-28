@@ -105,13 +105,13 @@
 }
 
 .home__scroll-name {
-    columns: var(--title-color);
+    color: var(--title-color);
     font-weight: var(--font-medium);
     margin-right: var(--mb-0-25);
     margin-left: 2px;
 }
 
-.home_scroll-arrow {
+.home__scroll-arrow {
     font-size: 1.25rem;
     color: var(--title-color);
 }
