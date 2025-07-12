@@ -20,12 +20,32 @@ This is a **personal portfolio website** built using **React.js**, showcasing pr
 
 ## 📁 Folder Structure
 ```
-Portfolio-Website/
-├── public/ 
-├── src/ 
-├── .gitignore
-├── package.json
-└── README.md
+📁 Portfolio-Website
+├── 📁 public
+├── 📁 src
+│   ├── 📁 assets
+│   ├── 📁 components
+│   │   ├── 📁 about
+│   │   ├── 📁 contact
+│   │   ├── 📁 footer
+│   │   ├── 📁 header
+│   │   ├── 📁 home
+│   │   ├── 📁 qualification
+│   │   ├── 📁 scrollup
+│   │   ├── 📁 services
+│   │   ├── 📁 skills
+│   │   └── 📁 testimonials
+│   ├── 🟦 App.css
+│   ├── 🟨 App.js
+│   ├── 🟨 App.test.js
+│   ├── 🎨 index.css
+│   ├── 🟨 index.js
+│   ├── 🟨 reportWebVitals.js
+│   └── 🟨 setupTests.js
+├── ⚙️ .gitignore
+├── 📦 package-lock.json
+├── 📦 package.json
+└── 📄 README.md
 ```
 ---
 
