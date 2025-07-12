@@ -21,8 +21,8 @@ This is a **personal portfolio website** built using **React.js**, showcasing pr
 ## 📁 Folder Structure
 ```
 Portfolio-Website/
-├── public/ # Static files and assets
-├── src/ # React components and pages
+├── public/ 
+├── src/ 
 ├── .gitignore
 ├── package.json
 └── README.md
