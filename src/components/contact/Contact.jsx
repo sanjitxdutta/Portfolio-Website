@@ -5,15 +5,15 @@ import "./contact.css";
 const Contact = () => {
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs
-      .sendForm('service_f6i4z2p', 'template_e83b3yw', form.current, {
-        publicKey: 'vc3oAfWJ9MmZRwC7V',
-      })
-      e.target.reset()
-  };
+        emailjs
+            .sendForm('service_f6i4z2p', 'template_e83b3yw', form.current, {
+                publicKey: 'vc3oAfWJ9MmZRwC7V',
+            })
+        e.target.reset()
+    };
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title">Get In Touch</h2>
@@ -28,7 +28,7 @@ const Contact = () => {
                             <i className="bx bx-mail-send contact__card-icon"></i>
 
                             <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">sanjitdutta@gmail.com</span>
+                            <span className="contact__card-data">duttasanjit691@gmail.com</span>
 
                             <a href="mailto:duttasanjit691@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
@@ -39,7 +39,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">+91-62899-71218</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=6289971218&text=Hello,%20more%20information!" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=6289971218&text=Hello,%20more%20information!" className="contact__button">Message me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
 
                         <div className="contact__card">
@@ -48,7 +48,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Call</h3>
                             <span className="contact__card-data">+91-62899-71218</span>
 
-                            <a href="tel:+916289971218" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="tel:+916289971218" className="contact__button">Call me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -59,23 +59,45 @@ const Contact = () => {
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>
-                            <input type="text" name="name" className="contact__form-input" placeholder="Insert your name" />
+                            <input
+                                type="text"
+                                name="name"
+                                className="contact__form-input"
+                                placeholder="Insert your name"
+                                required
+                                maxLength="50"
+                            />
                         </div>
 
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Mail</label>
-                            <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" />
+                            <input
+                                type="email"
+                                name="email"
+                                className="contact__form-input"
+                                placeholder="Insert your email"
+                                required
+                                maxLength="100"
+                            />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
                             <label className="contact__form-tag">Project</label>
-                            <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="Write your project"></textarea>
+                            <textarea
+                                name="project"
+                                cols="30"
+                                rows="10"
+                                className="contact__form-input"
+                                placeholder="Write your project"
+                                required
+                                maxLength="500"
+                            ></textarea>
                         </div>
 
                         <button className="button button--flex">
                             Send Message
                             <svg
-                                class="button__icon"
+                                className="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
@@ -94,6 +116,7 @@ const Contact = () => {
                         </button>
                     </form>
                 </div>
+
             </div>
         </section>
     )
