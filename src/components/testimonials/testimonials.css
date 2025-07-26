@@ -1,48 +1,69 @@
-.testimonial__container{
-    width: 750px;
+.testimonial__container {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 2rem;
 }
 
-.testimonial__card{
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1.5rem 2rem;
-    border-radius: 1.5rem;
-    margin-bottom: var(--mb-3);
+.testimonial__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
 }
 
-.testimonial__img{
-    width: 60px;
-    border-radius: 3rem;
-    margin-bottom: var(--mb-1);
+.testimonial__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.testmonial__name{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-25);
+.swiper-slide {
+  display: flex;
+  align-items: stretch;
 }
 
-.testimonial__description{
-    font-size: var(--small-font-size);
+.testimonial__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+  color: var(--title-color);
 }
 
-/* Swiper Class*/
-.swiper-pagination-bullet{
-    background-color: var(--text-color) !important;
+.testimonial__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-.swiper-pagination-bullet-active{
-    background-color: var(--title-color) !important;
+.swiper-pagination-bullet {
+  background-color: var(--text-color) !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color) !important;
+  opacity: 1;
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
 @media screen and (max-width: 992px) {
-    .testimonial__container{
-        width: initial;
-    }
-
-    .testimonial__card{
-        padding: 1.25rem 1.5rem;
-    }
+  .testimonial__container {
+    width: initial;
+    padding: 0 1rem;
   }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .testimonial__card {
+    padding: 1.25rem 1.5rem;
+    height: auto;
+  }
+}
