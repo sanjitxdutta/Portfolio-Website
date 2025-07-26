@@ -59,7 +59,7 @@ const Qualification = () => {
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Secondary Education (Class 10)</h3>
+                                <h3 className="qualification__title">Secondary Education</h3>
                                 <span className="qualification__subtitle">Nimta High School, Kolkata</span>
                                 <div className="qualification__calendar">
                                     <i className="uil uil-calendar-alt"></i> 2013 - 2019
