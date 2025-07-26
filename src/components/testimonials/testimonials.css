@@ -41,6 +41,7 @@
   line-height: 1.6;
 }
 
+/* Dots styling - fixed, unaffected by layout changes */
 .swiper-pagination-bullet {
   background-color: var(--text-color) !important;
   opacity: 0.5;
@@ -51,19 +52,76 @@
   opacity: 1;
 }
 
+/*==================== Zoom effect on image ====================*/
+.project__img-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease; /* Smooth zoom transition */
+}
+
+.project__card-content:hover .project__img {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
 /*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 992px) {
   .testimonial__container {
-    width: initial;
+    width: 100%;
     padding: 0 1rem;
-  }
-
-  .swiper-slide {
-    height: auto;
   }
 
   .testimonial__card {
     padding: 1.25rem 1.5rem;
     height: auto;
+  }
+
+  .testimonial__name {
+    font-size: 1rem;
+  }
+
+  .testimonial__description {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial__container {
+    padding: 0 1rem;
+  }
+
+  .testimonial__name {
+    font-size: 0.95rem;
+  }
+
+  .testimonial__description {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonial__container {
+    padding: 0 0.75rem;
+  }
+
+  .testimonial__card {
+    padding: 1rem 1rem;
+  }
+
+  .testimonial__name {
+    font-size: 0.9rem;
+  }
+
+  .testimonial__description {
+    font-size: 0.8rem;
   }
 }

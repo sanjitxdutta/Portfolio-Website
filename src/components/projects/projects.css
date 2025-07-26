@@ -1,0 +1,189 @@
+/* ✅ Container for projects */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+/* ✅ Project Card Styling */
+.project__card-content {
+  background-color: #ffffff;
+  border: 1px solid var(--text-color);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project__card-content:hover {
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ✅ Header Section */
+.project__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.project__title {
+  background-color: var(--title-color);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/* ✅ Links (Live + GitHub) */
+.project__links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.project__btn {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text-color);
+  background: transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.project__btn:hover {
+  background-color: var(--title-color);
+  color: #ffffff;
+  border-color: var(--title-color);
+}
+
+/* ✅ Description */
+.project__description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.project__note {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+/* ✅ Image Zoom Effect */
+.project__img-wrapper {
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project__card-content:hover .project__img {
+  transform: scale(1.05);
+}
+
+.project-swiper .swiper-pagination {
+  position: relative;
+  top: 5px; /* Try 0.5rem–1rem to test spacing */
+}
+
+/* ✅ Move pagination dots below the cards */
+.project-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 1.5rem; /* Add spacing between cards and dots */
+  text-align: center;
+}
+
+/* Optional: Customize dot size and active state */
+.project-swiper .swiper-pagination-bullet {
+  background: var(--text-color);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.project-swiper .swiper-pagination-bullet-active {
+  background: var(--title-color);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 768px) {
+  .project__card-content {
+    padding: 1.5rem;
+  }
+
+  .project__title {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .project__description {
+    font-size: 0.9rem;
+  }
+
+  .project__note {
+    font-size: 0.8rem;
+  }
+
+  .project__btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects__grid {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .project__card-content {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .project__title {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .project__description,
+  .project__note {
+    font-size: 0.85rem;
+  }
+
+  .project__btn {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  .project__img-wrapper {
+    height: 160px;
+  }
+}
