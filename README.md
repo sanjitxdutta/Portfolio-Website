@@ -1,25 +1,54 @@
 # 🌐 Portfolio Website
 
-This is a **personal portfolio website** built using **React.js**, showcasing projects, skills, contact information, and more. The design is responsive, clean, and optimized for a smooth user experience.
+A responsive and modern personal portfolio built with **React.js**. Showcases projects, skills, and contact details in a sleek, scrollable interface.
+
+<img width="1447" height="860" alt="Screenshot 2025-07-27 131221" src="https://github.com/user-attachments/assets/9367dad6-68f6-4944-a881-a385fbe57912" />
+
+---
 
 ## ✨ Features
 
-- 🧑‍💻 About Me section
-- 📁 Projects showcase with images and descriptions
-- 📬 Contact form integrated with EmailJS
-- 🎨 Modern and responsive UI using Swiper.js and CSS animations
-- 🚀 Deployed using GitHub Pages
+- ⚛️ Built with React 19
+- 📧 Integrated EmailJS for contact form
+- 🎨 Stylish UI with Swiper carousel
+- 🔍 Responsive design for all screen sizes
+- 🧪 Includes React Testing Library setup
 
-## 📦 Tech Stack
+---
 
-- **Frontend**: React.js
-- **Email Service**: EmailJS
-- **UI Components**: Swiper.js
-- **Testing**: Testing Library
-- **Deployment**: GitHub Pages
+## 🔧 Tech Stack
 
-## 📁 Folder Structure
+| Tech             | Description                                |
+|------------------|--------------------------------------------|
+| React.js         | JavaScript UI Library                      |
+| EmailJS          | Send emails from the contact form          |
+| Swiper.js        | Carousel/slider functionality              |
+| React Scripts    | CRA build tools                            |
+| gh-pages         | For GitHub Pages deployment                |
+
+---
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or above)
+- npm or yarn
+
+### Getting Started
+
+```bash
+git clone https://github.com/sanjitxdutta/Portfolio-Website.git
+cd Portfolio-Website
+npm install
+npm start
 ```
+Open http://localhost:3000 in your browser to view the app.
+
+---
+
+## 📂 Folder Structure
+
+```bash
 📁 Portfolio-Website
 ├── 📁 public
 ├── 📁 src
@@ -30,6 +59,7 @@ This is a **personal portfolio website** built using **React.js**, showcasing pr
 │   │   ├── 📁 footer
 │   │   ├── 📁 header
 │   │   ├── 📁 home
+│   │   ├── 📁 projects
 │   │   ├── 📁 qualification
 │   │   ├── 📁 scrollup
 │   │   ├── 📁 services
@@ -47,38 +77,24 @@ This is a **personal portfolio website** built using **React.js**, showcasing pr
 ├── 📦 package.json
 └── 📄 README.md
 ```
----
-
-## 🛠️ Installation
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
-npm install
-```
-
-To run the development server:
-```bash
-npm start
-```
----
-## 🧪 Scripts
-| Command         | Description                       |
-| --------------- | --------------------------------- |
-| `npm start`     | Runs the development server       |
-| `npm build`     | Builds the project for production |
-| `npm test`      | Runs tests                        |
-| `npm run eject` | Ejects the app (not recommended)  |
 
 ---
 
-## 🔗 Live Demo
-Check out the live version: https://portfolio-website-lilac-theta-13.vercel.app/
+## 📬 Contact
+If you'd like to connect or collaborate:
+- 📧 Email: duttasanjit691@gmail.com  
+- 🌐 Portfolio: [sanjitxdutta.vercel.app](https://sanjitxdutta.vercel.app)  
+- 🐙 GitHub: [@sanjitxdutta](https://github.com/sanjitxdutta)
 
-## 📧 Contact
-If you'd like to connect, feel free to reach out through the contact form on the website or via email.
+---
 
-## 📄 License
-This project is open source and available under the MIT License.
+## 📜 License
+This project is open source under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+- EmailJS
+- Swiper.js
+- Create React App
+- Inspiration from various open-source React portfolios on GitHub.
