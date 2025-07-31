@@ -11,25 +11,28 @@ import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Scrollup from './components/scrollup/Scrollup';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
     <>
-    <Header/>
+      <Header />
 
-    <main className='main'>
-      <Home />
-      <About />
-      <Skills />
-      <Services />
-      <Qualification />
-      <Projects />
-      <Testimonials />
-      <Contact />
-    </main>
-    
-    <Footer />
-    <Scrollup />
+      <main className='main'>
+        <Home />
+        <About />
+        <Skills />
+        <Services />
+        <Qualification />
+        <Projects />
+        <Testimonials />
+        <Contact />
+      </main>
+
+      <Footer />
+      <Scrollup />
+
+      <Analytics />
     </>
   )
 }
