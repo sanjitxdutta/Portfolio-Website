@@ -3,6 +3,7 @@ import "./about.css";
 import AboutImg from "../../assets/about.png";
 import CV from "../../assets/Sanjit-Cv.pdf";
 import Info from './Info';
+import { track } from '@vercel/analytics';
 
 const About = () => {
     return (
@@ -18,7 +19,7 @@ const About = () => {
 
                     <p className="about__description">From intuitive interfaces to efficient server-side logic — I bring full stack ideas to life. My journey includes years of hands-on experience and many satisfied clients.</p>
 
-                    <a download="" href={CV} className="button button--flex">Download CV
+                    <a download="" href={CV} onClick={() => {track('Download CV')}} className="button button--flex">Download CV
                         <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
