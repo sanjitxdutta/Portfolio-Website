@@ -26,7 +26,7 @@ const Footer = () => {
             <i class="lni lni-x"></i>
           </a>
 
-          <a href="https://www.linkedin.com/in/sanjit-dutta-05374a233/" className="footer__social-link" target="_blank">
+          <a href="https://www.linkedin.com/in/sanjitxdutta/" className="footer__social-link" target="_blank">
             <i class="bx bxl-linkedin"></i>
           </a>
 
