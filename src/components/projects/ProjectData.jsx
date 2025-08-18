@@ -17,7 +17,7 @@ const ProjectData = [
   {
     id: 2,
     title: "Chat Hive",
-    description: "ChatHive is a real-time chat app with secure rooms, instant messaging, and theme support, built using WebSockets and React.",
+    description: "ChatHive is a realtime chat app with secure rooms, instant messaging, and theme support, built using WebSockets and React.",
     image: ProjectImg2,
     liveLink: "https://chathive-app.vercel.app/",
     githubLink: "https://github.com/sanjitxdutta/chathive",
