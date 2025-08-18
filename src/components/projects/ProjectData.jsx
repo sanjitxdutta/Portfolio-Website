@@ -17,7 +17,7 @@ const ProjectData = [
   {
     id: 2,
     title: "Chat Hive",
-    description: "ChatHive is a realtime chat app with secure rooms, instant messaging, and theme support, built using WebSockets and React.",
+    description: "ChatHive is a real-time chat app with secure rooms, instant messaging, and theme support, built using WebSockets and React.",
     image: ProjectImg2,
     liveLink: "https://chathive-app.vercel.app/",
     githubLink: "https://github.com/sanjitxdutta/chathive",
@@ -25,7 +25,7 @@ const ProjectData = [
   {
     id: 3,
     title: "Second Brain",
-    description: "Second Brain - Your personal link manager — save, organize & access links from LinkedIn, Twitter, YouTube, blogs & more in one place.",
+    description: "Second Brain is a personal link manager to save, organize and access links from Twitter, LinkedIn, YouTube, blogs, and more.",
     image: ProjectImg3,
     liveLink: "https://second-brainx.vercel.app/",
     githubLink: "https://github.com/sanjitxdutta/second-brain",
